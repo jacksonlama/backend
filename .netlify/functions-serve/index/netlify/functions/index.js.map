@@ -1,8 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../home/thesickness/Downloads/backend/netlify/functions/index.js"],
-  "sourceRoot": "/tmp/tmp-152299-WfnZ3PGnT8Dh",
-  "sourcesContent": ["export async function handler() {\n  return {\n    statusCode: 200,\n    body: JSON.stringify({\n      message: \"Welcome to the News API\",\n      endpoints: [\"/.netlify/functions/news\"],\n    }),\n  };\n}\n"],
-  "mappings": ";;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,eAAsB,UAAU;AAC9B,SAAO;AAAA,IACL,YAAY;AAAA,IACZ,MAAM,KAAK,UAAU;AAAA,MACnB,SAAS;AAAA,MACT,WAAW,CAAC,0BAA0B;AAAA,IACxC,CAAC;AAAA,EACH;AACF;",
-  "names": []
-}
