@@ -7,7 +7,7 @@ export async function handler() {
       statusCode: 200,
       headers: {
         "Content-Type": "application/json",
-        "Access-Control-Allow-Origin": "*", // CORS
+        "Access-Control-Allow-Origin": "*",
       },
       body: JSON.stringify(news),
     };

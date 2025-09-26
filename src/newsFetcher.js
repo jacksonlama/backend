@@ -1,25 +1,22 @@
 import * as cheerio from "cheerio";
 import Parser from "rss-parser";
 
+// Add requestOptions with User-Agent
 const parser = new Parser({
+  requestOptions: {
+    headers: {
+      "User-Agent": "Mozilla/5.0 (Node.js Server)",
+    },
+  },
   customFields: {
     item: ["image"],
   },
 });
 
 const RSS_FEEDS = [
-  {
-    source: "OnlineKhabar",
-    url: "https://www.onlinekhabar.com/rss",
-  },
-  {
-    source: "Setopati",
-    url: "https://setopati.com/rss",
-  },
-  {
-    source: "Ratopati",
-    url: "https://ratopati.com/rss",
-  },
+  { source: "OnlineKhabar", url: "https://www.onlinekhabar.com/rss" },
+  { source: "Setopati", url: "https://setopati.com/rss" },
+  { source: "Ratopati", url: "https://www.ratopati.com/rss" },
 ];
 
 function extractImage(item) {
