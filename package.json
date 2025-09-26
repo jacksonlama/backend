@@ -4,14 +4,15 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon src/index.js"
+    "dev": "netlify dev",
+    "build": "echo 'No build step'",
+    "start": "netlify dev"
   },
   "dependencies": {
     "cheerio": "^1.1.2",
     "cors": "^2.8.5",
     "dotenv": "^17.2.2",
     "express": "^4.18.2",
-    "nodemon": "^3.1.10",
     "rss-parser": "^3.12.0"
   }
 }
