@@ -4,9 +4,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "netlify dev",
-    "build": "echo 'No build step'",
-    "start": "netlify dev"
+    "start": "node src/index.js"
   },
   "dependencies": {
     "cheerio": "^1.1.2",
